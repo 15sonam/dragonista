@@ -1,0 +1,1289 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dragonista - Chat Window</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/media/image/favicon.png"/>
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
+
+    <!-- lightbox -->
+    <link rel="stylesheet" href="vendors/lightbox/magnific-popup.css" type="text/css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/custom.css" type="text/css">
+
+<style>
+
+
+.avatar-upload-choose {
+    position: relative;
+    max-width: 205px;
+    /* margin: 50px auto; */
+  }
+  .avatar-upload-choose .avatar-edit-choose {
+    /* position: absolute; */
+    right: 0;
+    z-index: 1;
+    top: 0px;
+    height: 100%;
+    margin-top: 2px;
+  }
+  .avatar-upload-choose .avatar-edit-choose input {
+    display: none;
+  }
+  .avatar-upload-choose .avatar-edit-choose input + label {
+    display: inline-block;
+    width: 45px;
+    height: 100%;
+    margin-bottom: 0;
+   
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  .avatar-upload-choose .avatar-edit-choose input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+  }
+  .avatar-upload-choose .avatar-edit-choose input + label:after {
+    content: "\f0c6";
+    font-family: 'FontAwesome';
+    color: #827d7d;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+  }
+ 
+</style>
+  
+</head>
+<body class="stretch-layout sticky-navigation student-index-background">
+
+
+
+<!-- begin::navigation -->
+<div class="navigation">
+   <!-- begin::logo -->
+   <div id="logo">
+    <a href="index.html">
+        <img class="logo" src="assets/media/image/logo.jpg" alt="logo">
+        <img class="logo-sm" src="assets/media/image/logo-sm.png" alt="small logo">
+        <img class="logo-dark" src="assets/media/image/logo-dark.png" alt="dark logo">
+    </a>
+</div>
+<!-- end::logo -->
+
+     <!-- begin::navigation header -->
+     <header class="navigation-header">
+        <figure class="avatar avatar-state-success">
+            <img src="https://via.placeholder.com/128X128" class="rounded-circle" alt="image">
+        </figure>
+        <div>
+            <h5>Nikos Pedlow</h5>
+            <p class="text-muted">Student</p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="profile.html" class="btn nav-link bg-info-bright" title="Profile" data-toggle="tooltip">
+                        <i data-feather="user"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="setting_student.html" class="btn nav-link bg-success-bright" title="Settings" data-toggle="tooltip">
+                        <i data-feather="settings"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="btn nav-link bg-danger-bright" title="Logout" data-toggle="tooltip">
+                        <i data-feather="log-out"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- end::navigation header -->
+
+    <!-- begin::navigation menu -->
+    <div class="navigation-menu-body">
+        <ul>
+            <li class="navigation-divider">Main</li>
+          
+                 <li>
+                <a href="index.html">
+                    <i class="nav-link-icon" data-feather="home"></i>
+                    <span>Home</span>
+                 </a>
+            </li>
+            <li>
+                    <a href="list_of_classroom.html">
+                        <i class="nav-link-icon" data-feather="video"></i>
+                        <span>Live Class</span>
+                     </a>
+                </li>
+               <li>
+                    <a class="" href="inbox.html">
+                        <i class="nav-link-icon" data-feather="mail"></i>
+                        <span>Mail</span>
+                        <span class="badge badge-success">2</span>
+                    </a>
+                </li>
+
+             <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="book"></i>
+                    <span>Explore</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="course_list_student.html">Physics</a>
+                        <ul>
+                            <li>
+                                <a href="course_list_student_detail.html">Quantum  Physics</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="course_list_student.html">Maths</a>
+                        <ul>
+                            <li>
+                                <a href="course_list_student_detail.html">Geometry</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="recent_views_student.html">
+                    <i class="nav-link-icon" data-feather="eye"></i>
+                    <span>Recent Views</span>
+                 </a>
+            </li>
+            <li>
+                <a href="my_courses_student.html">
+                    <i class="nav-link-icon" data-feather="folder"></i>
+                    <span>My Courses</span>
+                 </a>
+            </li>
+   <li>
+                <a href="paymennt_history.html">
+                    <i class="nav-link-icon" data-feather="credit-card"></i>
+                    <span>Invoice</span>
+                 </a>
+            </li>
+            <li>
+                <a href="my_completed_course_student.html">
+                    <i class="nav-link-icon" data-feather="check-circle"></i>
+                    <span>My Completed Courses</span>
+                 </a>
+            </li>
+            <li>
+                <a href="my_incomplete_course_student.html">
+                    <i class="nav-link-icon" data-feather="file"></i>
+                    <span>My incomplete Courses</span>
+                 </a>
+            </li>
+            <li>
+                <a href="calendar_student.html">
+                    <i class="nav-link-icon" data-feather="calendar"></i>
+                    <span>Calendar</span>
+                 </a>
+            </li>
+            
+            
+        </ul>
+    </div>
+    <!-- end::navigation menu -->
+
+</div>
+<!-- end::navigation -->
+
+<!-- begin::main -->
+<div id="main">
+
+    <!-- begin::header -->
+    <div class="header">
+
+        <!-- begin::header left -->
+        <ul class="navbar-nav">
+
+            <!-- begin::navigation-toggler -->
+            <li class="nav-item navigation-toggler">
+                <a href="#" class="nav-link">
+                    <i data-feather="menu"></i>
+                </a>
+            </li>
+            <!-- end::navigation-toggler -->
+
+            <!-- begin::header-logo -->
+            <li class="nav-item" id="header-logo">
+                <a href="index.html">
+                    <img class="logo" src="assets/media/image/logo.png" alt="logo">
+                    <img class="logo-sm" src="assets/media/image/logo-sm.png" alt="small logo">
+                    <img class="logo-dark" src="assets/media/image/logo-dark.png" alt="dark logo">
+                </a>
+            </li>
+            <!-- end::header-logo -->
+        </ul>
+        <!-- end::header left -->
+
+        <!-- begin::header-right -->
+        <div class="header-right">
+            <ul class="navbar-nav">
+
+                <!-- begin::search-form -->
+                <li class="nav-item search-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-default" type="button">
+                                            <i data-feather="search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::search-form -->
+
+                <!-- begin::header minimize/maximize -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" title="Fullscreen" data-toggle="fullscreen">
+                        <i class="maximize" data-feather="maximize"></i>
+                        <i class="minimize" data-feather="minimize"></i>
+                    </a>
+                </li>
+                <!-- end::header minimize/maximize -->
+
+                <!-- begin::header app list -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" title="Apps" data-toggle="dropdown">
+                        <i data-feather="grid"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-3">
+                            <h6 class="text-uppercase font-size-11 mb-3">Web Apps</h6>
+                            <div class="row row-xs">
+                                <div class="col-6">
+                                    <a href="chat.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center mb-3">
+                                            <i class="text-success width-23 height-23"
+                                               data-feather="message-circle"></i>
+                                            <div class="mt-2">Chat</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="inbox.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center mb-3">
+                                            <i class="text-info width-23 height-23" data-feather="mail"></i>
+                                            <div class="mt-2">Mail</div>
+                                        </div>
+                                    </a>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header app list -->
+
+                <!-- begin::header messages dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-link-notify" title="Messages" data-toggle="dropdown">
+                        <i data-feather="message-circle"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="https://via.placeholder.com/481X271">
+                            <h6 class="mb-1">Messages</h6>
+                            <small class="font-size-11 opacity-7">2 unread messages</small>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-15">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle" alt="user">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Herbie Pallatina
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">02:30 PM</span>
+                                                <span>Have you madimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-15">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle" alt="user">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Andrei Miners
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">08:36 PM</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="text-divider small pb-2 pl-3 pt-3">
+                                    <span>Old chats</span>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-15">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle" alt="user">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Kevin added
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">11:09 PM</span>
+                                                <span>Have you madimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-15">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle" alt="user">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Eugenio Carnelley
+                                                <i title="Mark as read" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">Yesterday</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-15">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle" alt="user">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Neely Ferdinand
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">Yesterday</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-2 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header messages dropdown -->
+
+                <!-- begin::header notification dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-link-notify" title="Notifications" data-toggle="dropdown">
+                        <i data-feather="bell"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="https://via.placeholder.com/481X271">
+                            <h6 class="mb-1">Notifications</h6>
+                            <small class="font-size-11 opacity-7">1 unread notifications</small>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-success-bright text-success rounded-circle">
+                                                    <i class="ti-user"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                New customer registered
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">20 min ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="text-divider small pb-2 pl-3 pt-3">
+                                    <span>Old notifications</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-warning-bright text-warning rounded-circle">
+                                                    <i class="ti-package"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                New Order Recieved
+                                                <i title="Mark as read" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">45 sec ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-danger-bright text-danger rounded-circle">
+                                                    <i class="ti-server"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Server Limit Reached!
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">55 sec ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-info-bright text-info rounded-circle">
+                                                    <i class="ti-layers"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Apps are ready for update
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">Yesterday</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-2 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header notification dropdown -->
+            </ul>
+
+            <!-- begin::mobile header toggler -->
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item header-toggler">
+                    <a href="#" class="nav-link">
+                        <i data-feather="arrow-down"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- end::mobile header toggler -->
+        </div>
+        <!-- end::header-right -->
+    </div>
+    <!-- end::header -->
+
+    <!-- begin::main content -->
+    <main class="main-content">
+
+        <!-- begin::chat block -->
+        <div class="row no-gutters chat-block">
+
+            <!-- begin::chat sidebar -->
+            <div class="col-lg-4 chat-sidebar border-right">
+
+                <!-- begin::chat sidebar search -->
+                <div class="chat-sidebar-header">
+                    <div class="d-flex">
+                        <div class="pr-3">
+                            <div class="avatar avatar-sm">
+                                <img src="https://via.placeholder.com/128X128" class="rounded-circle"
+                                     alt="image">
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="mb-1">Nikos Pedlow</h6>
+                            <div class="m-0 small text-muted">Administrator</div>
+                        </div>
+                        <div class="ml-auto">
+                            <div class="dropdown">
+                                <a href="#" data-toggle="dropdown">
+                                    <i class="width-18 height-18" data-toggle="tooltip" title="Settings"
+                                       data-feather="settings"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="profile.html">View Profile</a>
+                                    <a class="dropdown-item" href="edit_student_profile.html">Edit Profile</a>
+                                    <a class="dropdown-item" href="setting_student.html">Settings</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Chat search"
+                                   aria-describedby="button-addon1">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-light" type="button" id="button-addon1">
+                                    <i class="ti-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- begin::chat sidebar search -->
+
+                <!-- end::chat list -->
+                <div class="chat-sidebar-content">
+                    <ul class="nav nav-tabs" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                               role="tab" aria-controls="pills-home" aria-selected="true">Chats</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                               role="tab" aria-controls="pills-profile" aria-selected="false">Calls</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                               role="tab" aria-controls="pills-contact" aria-selected="false">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content pt-3" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                             aria-labelledby="pills-home-tab">
+                            <p class="small mb-0">Recent chats</p>
+                            <div class="chat-lists">
+                                <div class="list-group list-group-flush">
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center link-1 pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <div class="avatar avatar-sm avatar-state-danger">
+                                                <span class="avatar-title bg-success rounded-circle">F</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1">Francisco Ubsdale</h6>
+                                            <span class="small text-muted">Hello how are you?</span>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <span class="badge badge-primary badge-pill ml-auto">1</span>
+                                            <span class="small text-muted">2:32 PM</span>
+                                        </div>
+                                    </a>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center link-1 pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <div class="avatar avatar-sm avatar-state-success">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1">Natale Janu</h6>
+                                            <span class="small text-muted">Hi!</span>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <span class="badge badge-primary badge-pill ml-auto">3</span>
+                                            <span class="small text-muted">08:27 PM</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item active d-flex pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <span class="avatar avatar-sm avatar-state-warning">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </span>
+                                        </div>
+                                        <div class="flex-grow- 1">
+                                            <h6 class="mb-1">Orelie Rockhall</h6>
+                                            <span class="small text-muted">
+                                                <i class="fa fa-image mr-1"></i> Photo
+                                            </span>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <span class="small text-muted">Yesterday</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item d-flex pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <span class="avatar avatar-sm avatar-state-info">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Barbette Bolf</h6>
+                                            <span class="small text-muted">
+                                                <i class="fa fa-video-camera mr-1"></i> Video
+                                            </span>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <span class="small text-muted">Last week</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <span class="avatar avatar-sm avatar-state-secondary">
+                                                <span class="avatar-title bg-warning rounded-circle">D</span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1">Dudley Laborde</h6>
+                                            <span class="small text-muted">Hello how are you?</span>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <span class="small text-muted">2:32 PM</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <span class="avatar avatar-sm avatar-state-success">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1">Boony Gidden</h6>
+                                            <span class="small text-muted">Hi!</span>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <span class="small text-muted">08:27 PM</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item d-flex pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <span class="avatar avatar-sm avatar-state-danger">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </span>
+                                        </div>
+                                        <div class="flex-grow- 1">
+                                            <h6 class="mb-1">Vivianne Sothcott</h6>
+                                            <span class="small text-muted">
+                                                <i class="fa fa-image mr-1"></i> Photo
+                                            </span>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <span class="small text-muted">Yesterday</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item d-flex pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <span class="avatar avatar-sm avatar-state-warning">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Brandais Reisen</h6>
+                                            <span class="small text-muted">
+                                                <i class="fa fa-video-camera mr-1"></i> Video
+                                            </span>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <span class="small text-muted">Last week</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                             aria-labelledby="pills-profile-tab">
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item d-flex pl-0 pr-0 pb-3 pt-3">
+                                    <div class="pr-3">
+                                        <div class="avatar avatar-sm avatar-state-warning">
+                                            <img src="https://via.placeholder.com/128X128"
+                                                 class="rounded-circle"
+                                                 alt="image">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Orelie Rockhall</h6>
+                                        <div class="small text-muted d-flex align-items-center">
+                                            <i class="width-15 height-15 mr-1 text-danger"
+                                               data-feather="arrow-down-left"></i>
+                                            Today, 03:11 AM
+                                        </div>
+                                    </div>
+                                    <div class="text-right ml-auto">
+                                        <i class="text-danger width-18 height-18" data-feather="video"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                    <div class="pr-3">
+                                        <div class="avatar avatar-sm avatar-state-success">
+                                            <img src="https://via.placeholder.com/128X128"
+                                                 class="rounded-circle"
+                                                 alt="image">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Barbette Bolf</h6>
+                                        <div class="small text-muted d-flex align-items-center">
+                                            <i class="width-15 height-15 mr-1 text-success"
+                                               data-feather="arrow-up-right"></i>
+                                            Today, 03:11 AM
+                                        </div>
+                                    </div>
+                                    <div class="text-right ml-auto">
+                                        <i class="width-18 height-18 text-success"
+                                           data-feather="phone-call"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item d-flex pl-0 pr-0 pb-3 pt-3">
+                                    <div class="pr-3">
+                                        <div class="avatar avatar-sm avatar-state-warning">
+                                            <img src="https://via.placeholder.com/128X128"
+                                                 class="rounded-circle"
+                                                 alt="image">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow- 1">
+                                        <h6 class="mb-1">Natale Janu</h6>
+                                        <div class="small text-muted d-flex align-items-center">
+                                            <i class="width-15 height-15 mr-1 text-success"
+                                               data-feather="arrow-up-right"></i>
+                                            Today, 03:11 AM
+                                        </div>
+                                    </div>
+                                    <div class="text-right ml-auto">
+                                        <i class="width-18 height-18 text-success" data-feather="video"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                    <div class="pr-3">
+                                        <div class="avatar avatar-sm avatar-state-secondary">
+                                            <span class="avatar-title bg-info rounded-circle">T</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Terra Fehner</h6>
+                                        <div class="small text-muted d-flex align-items-center">
+                                            <i class="width-15 height-15 mr-1 text-danger"
+                                               data-feather="arrow-down-left"></i>
+                                            Today, 03:11 AM
+                                        </div>
+                                    </div>
+                                    <div class="text-right ml-auto">
+                                        <i class="width-18 height-18 text-danger" data-feather="video"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item d-flex pl-0 pr-0 pb-3 pt-3">
+                                    <div class="pr-3">
+                                        <div class="avatar avatar-sm avatar-state-info">
+                                            <img src="https://via.placeholder.com/128X128"
+                                                 class="rounded-circle"
+                                                 alt="image">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Orelie Rockhall</h6>
+                                        <div class="small text-muted d-flex align-items-center">
+                                            <i class="width-15 height-15 mr-1 text-success"
+                                               data-feather="arrow-up-right"></i>
+                                            Today, 03:11 AM
+                                        </div>
+                                    </div>
+                                    <div class="text-right ml-auto">
+                                        <i class="width-18 height-18 text-success"
+                                           data-feather="phone-call"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                             aria-labelledby="pills-contact-tab">
+                            <p class="small mb-0">142 Contacts</p>
+                            <div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <div class="avatar avatar-sm avatar-state-danger">
+                                                <span class="avatar-title bg-success rounded-circle">A</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1">Alene Ranyelld</h6>
+                                            <div class="small text-muted">United Kingdom</div>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <a href="#" class="p-1">
+                                                <i data-feather="phone-call" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="message-circle" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="video" class="width-18 height-18"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <div class="avatar avatar-sm avatar-state-success">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1">Chloette Fewster</h6>
+                                            <div class="small text-muted">Estonia</div>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <a href="#" class="p-1">
+                                                <i data-feather="phone-call" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="message-circle" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="video" class="width-18 height-18"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <div class="avatar avatar-sm avatar-state-warning">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow- 1">
+                                            <h6 class="mb-1">Stephanus Shergill</h6>
+                                            <div class="small text-muted">Austria</div>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <a href="#" class="p-1">
+                                                <i data-feather="phone-call" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="message-circle" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="video" class="width-18 height-18"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <div class="avatar avatar-sm avatar-state-info">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Elvyn Frowde</h6>
+                                            <div class="small text-muted">Canada</div>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <a href="#" class="p-1">
+                                                <i data-feather="phone-call" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="message-circle" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="video" class="width-18 height-18"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <div class="avatar avatar-sm avatar-state-secondary">
+                                                <span class="avatar-title bg-success rounded-circle">A</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1">Alene Ranyelld</h6>
+                                            <div class="small text-muted">Canada</div>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <a href="#" class="p-1">
+                                                <i data-feather="phone-call" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="message-circle" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="video" class="width-18 height-18"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <div class="avatar avatar-sm avatar-state-success">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1">Chloette Fewster</h6>
+                                            <div class="small text-muted">Spain</div>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <a href="#" class="p-1">
+                                                <i data-feather="phone-call" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="message-circle" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="video" class="width-18 height-18"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <div class="avatar avatar-sm avatar-state-danger">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow- 1">
+                                            <h6 class="mb-1">Stephanus Shergill</h6>
+                                            <div class="small text-muted">Romania</div>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <a href="#" class="p-1">
+                                                <i data-feather="phone-call" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="message-circle" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="video" class="width-18 height-18"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center pl-0 pr-0 pb-3 pt-3">
+                                        <div class="pr-3">
+                                            <div class="avatar avatar-sm avatar-state-warning">
+                                                <img src="https://via.placeholder.com/128X128"
+                                                     class="rounded-circle"
+                                                     alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Elvyn Frowde</h6>
+                                            <div class="small text-muted">New Zealand</div>
+                                        </div>
+                                        <div class="text-right ml-auto">
+                                            <a href="#" class="p-1">
+                                                <i data-feather="phone-call" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="message-circle" class="width-18 height-18"></i>
+                                            </a>
+                                            <a href="#" class="p-1">
+                                                <i data-feather="video" class="width-18 height-18"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn btn-outline-light btn-sm">More Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end::chat list -->
+
+            </div>
+            <!-- end::chat sidebar -->
+
+            <!-- begin::chat content -->
+            <div class="col-lg-8 chat-content">
+
+                <!-- begin::chat header -->
+                <div class="chat-header border-bottom">
+                    <div class="d-flex align-items-center">
+                        <div class="pr-3">
+                            <div class="avatar avatar-sm avatar-state-warning">
+                                <img src="https://via.placeholder.com/128X128" class="rounded-circle" alt="image">
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="mb-1">Orelie Rockhall</h6>
+                            <div class="m-0 small text-success">typing...</div>
+                        </div>
+                        <div class="ml-auto">
+                            <ul class="nav align-items-center">
+                                <li class="mr-4 d-sm-inline d-none">
+                                    <a href="#" title="Start Video Call" data-toggle="tooltip">
+                                        <i data-feather="video" class="width-18 height-18"></i>
+                                    </a>
+                                </li>
+                                <li class="mr-4 d-sm-inline d-none">
+                                    <a href="#" title="Start Voice Call" data-toggle="tooltip">
+                                        <i data-feather="phone-call" class="width-18 height-18"></i>
+                                    </a>
+                                </li>
+                                <li class="d-sm-inline d-none">
+                                    <a href="#" title="Add to Contact" data-toggle="tooltip">
+                                        <i data-feather="user-plus" class="width-18 height-18"></i>
+                                    </a>
+                                </li>
+                                <li class="ml-4 mobile-chat-close-btn">
+                                    <a href="#" class="btn btn-sm btn-danger">
+                                        <i data-feather="x" class="width-18 height-18"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end::chat header -->
+
+                <!-- begin::messages -->
+                <div class="messages">
+                    <div class="message-item">
+                        <div class="message-item-content">Hi!</div>
+                        <span class="time small text-muted font-italic">02:30 PM</span>
+                    </div>
+                    <div class="message-item me">
+                        <div class="message-item-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Exercitationem fuga iure iusto libero, possimus quasi quis repellat sint tempora ullam!
+                        </div>
+                        <span class="time small text-muted font-italic">Yesterday</span>
+                    </div>
+                    <div class="message-item">
+                        <div class="message-item-content">Hello! How are you today?</div>
+                        <span class="time small text-muted font-italic">02:30 PM</span>
+                    </div>
+                    <div class="message-item me">
+                        <div class="message-item-content">Lorem ipsum dolor sit.</div>
+                        <span class="time small text-muted font-italic">02:30 PM</span>
+                    </div>
+                    <div class="message-item">
+                        <div class="message-item-content d-flex">
+                            <i class="ti-file mr-2 font-size-20 mt-2"></i>
+                            <div>
+                                <div>important_documents.pdf <i class="text-muted small">(50KB)</i></div>
+                                <ul class="list-inline small">
+                                    <li class="list-inline-item"><a href="#">Download</a></li>
+                                    <li class="list-inline-item"><a href="#">View</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="small text-muted font-italic">02:30 PM</span>
+                    </div>
+                    <div class="message-item me">
+                        <div class="message-item-content">Lorem ipsum dolor sit.</div>
+                        <span class="time small text-muted font-italic">02:30 PM</span>
+                    </div>
+                    <div class="message-item">
+                        <div class="message-item-content">Lorem ipsum dolor sit.</div>
+                        <span class="time small text-muted font-italic">02:30 PM</span>
+                    </div>
+                    <div class="message-item me message-media">
+                        <img src="https://via.placeholder.com/600X600" alt="image">
+                        <span class="time small text-muted font-italic">02:30 PM</span>
+                    </div>
+                    <div class="message-item message-item-divider">
+                        <span>Today</span>
+                    </div>
+                    <div class="message-item">
+                        <div class="message-item-content">Lorem ipsum dolor sit.</div>
+                        <span class="time small text-muted font-italic">02:30 PM</span>
+                    </div>
+                </div>
+                <!-- end::messages -->
+
+                <!-- begin::chat footer -->
+                <div class="chat-footer border-top">
+                    <form >
+                           
+                       <div class="d-flex mb-0">
+                            <div class="flex-grow-1">
+                                    <input type="text" class="form-control" placeholder="Write your message">
+                                    
+                                </div>
+                               
+                                <div class="chat-footer-buttons d-flex pb-1">
+                                    <button class="btn btn-primary" type="submit">
+                                        <i data-feather="send" class="width-15 height-15"></i>
+                                    </button>
+                                    <div>
+                                         <div class="avatar-upload-choose">
+                                                    <div class="avatar-edit-choose">
+                                                            <input type="file" id="file-upload" multiple required />
+                                                            <label for="file-upload"></label>
+                                                    </div>
+                                                   
+                                            </div>
+                                           
+                                    </div>
+                                   
+                                    </div>
+                                    
+                       </div>
+                       <div id="file-upload-filename"></div>
+                      
+                    </form>
+                </div>
+                <!-- end::chat footer -->
+
+            </div>
+            <!-- begin::chat content -->
+          
+        </div>
+        <!-- begin::chat block -->
+
+    </main>
+    <!-- end::main content -->
+
+    <!-- begin::footer -->
+    <footer>
+        <div class="container">
+            <div>© 2020 Dragonista. Developed by<a href="http://www.cyperts.net/">  Cyperts Digital Solutions</a></div>
+            <div>
+                <nav class="nav">
+                    <a href="#" class="nav-link"> About</a>
+                    <a href="#" class="nav-link"> Privacy</a>
+                    <a href="#" class="nav-link"> Terms & Conditions</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- end::footer -->
+
+</div>
+<!-- end::main -->
+
+<!-- Plugin scripts -->
+<script src="vendors/bundle.js"></script>
+
+<!-- App scripts -->
+<script src="assets/js/app.min.js"></script>
+
+<!-- begin::lightbox -->
+<script src="vendors/lightbox/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/examples/lightbox.js"></script>
+
+<script>
+    $(function () {
+        $(document).on('click', '.chat-block .chat-sidebar .chat-sidebar-content .chat-lists a', function () {
+            var chat_content = $('.chat-block .chat-content');
+
+            // Open chat screen
+            chat_content.addClass('mobile-open');
+
+            // Scroll resize
+            chat_content.find('.messages').scrollTop(chat_content.find('.messages').get(0).scrollHeight, -1).niceScroll({
+                horizrailenabled: false
+            }).resize();
+
+            return false;
+        });
+    });
+</script>
+
+<script>
+var input = document.getElementById( 'file-upload' );
+var infoArea = document.getElementById( 'file-upload-filename' );
+
+input.addEventListener( 'change', showFileName );
+
+function showFileName( event ) {
+  
+  // the change event gives us the input it occurred in 
+  var input = event.srcElement;
+  
+  // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+  var fileName = input.files[0].name;
+  
+  // use fileName however fits your app best, i.e. add it into a div
+  infoArea.textContent = 'File name: ' + fileName;
+}
+</script>
+</body>
+</html>

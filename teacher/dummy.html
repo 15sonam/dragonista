@@ -1,0 +1,242 @@
+<style>
+        article {
+          position: relative;
+          text-align: center;
+        
+        }
+        .bottom-left {
+          position: absolute;
+          bottom: 8px;
+          left: 16px;
+        background-color:#582c4fbf;
+        width: 92%;
+        color:#fff;
+        }
+        .button {
+        border-radius:0px;
+          display: inline-block;
+          padding: 0.5em 1.0em;
+          background: #582c4f;
+          cursor: pointer;
+          border: 1px solid #582c4f;
+          margin: 10px;
+          -webkit-transition: background 0.3s;
+          -moz-transition: background 0.3s;
+          transition: background 0.3s;
+          color:#fff;
+        }
+        
+        .button:hover {
+          background-color:#fff;
+           color:#582c4f;
+        }
+        
+        .button:active,
+        .button.is-checked {
+          background-color:#fff;
+          outline: none;
+          color:#582c4f;
+        }
+        
+        .button-group {
+          margin: 20px 0;
+          text-align: center;
+        }
+        
+        .button-group:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        
+        img {
+          vertical-align: middle;
+        }
+        
+        .img-responsive {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+        
+        .grid article {
+          background-color: #FFFFFF;
+          display: block;
+          float: left;
+          margin: 1%;
+          width: 23%;
+        }
+        
+        @media (max-width: 1024px) {
+          .grid article {
+            width: 31.3%;
+          }
+        }
+        
+        @media (max-width: 767px) {
+          .grid article {
+            width: 48%;
+          }
+        }
+        
+        @media (max-width: 479px) {
+          .grid article {
+            margin: 2% 0;
+            width: 100%;
+          }
+        }
+        </style>
+        <div class="button-group filters-button-group">
+                <button class="button is-checked" id="training" data-filter=".training">Training</button>
+            <button class="button" data-filter=".facilities">Facilities</button>
+                <button class="button" data-filter=".achievement">Achievement</button>
+                <button class="button" data-filter=".gallery">Gallery</button>
+                
+            </div>
+            
+         <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+                <article class="training">
+                    <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/Type-Trg.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                    <div class="bottom-left">Type Training </div>
+                     </article>
+                <article class="training">
+                    <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/Basic-Maintenance-Trg1.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                    <div class="bottom-left">Basic Maintenance Training</div>
+               </article>
+                <article class="training">
+                    <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/Regulatory-Trg.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                    <div class="bottom-left">Regulatory Training</div>
+               </article>
+                <article class="training">
+                    <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/Mandatory-Continuation-Trg2.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                    <div class="bottom-left">Mandatory Continuation Training</div>
+                </article>
+                <article class="training">
+                        <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/DGCA-Trg.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                   
+                 <div class="bottom-left">DGCA India Approved Training</div> 
+                 </article>
+                 <article class="training">
+                        <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/EASA-Trg.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                   
+                 <div class="bottom-left">EASA Approved Training</div> 
+                 </article>
+                 <article class="training">
+                        <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/Workshop-Trg-1.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                   
+                 <div class="bottom-left">Workshop Training</div> 
+                 </article>
+                <article class="facilities">
+                  <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/fas_1.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+             <div class="bottom-left">On-Job-Training</div>    
+                 </article>
+                <article class="facilities">
+                    <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/fas_2.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+             <div class="bottom-left">Aircraft System Trainers</div>      
+               </article>
+        
+                <article class="facilities">
+                    <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/fas_3.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+             <div class="bottom-left">Bench-fitting Workshop</div>       
+              </article>
+        
+                <article class="facilities">
+                        <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/fas_4.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                 <div class="bottom-left">DCAM & EASA Approved Training Rooms</div>       
+                  </article>
+        
+                    <article class="facilities">
+                            <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/fas_5.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                     <div class="bottom-left">Electrical Handskills Workshop</div>      
+                       </article>
+                        <article class="facilities">
+                                <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/fas_6.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                         <div class="bottom-left">Electronics Workshop</div>     
+                            </article>     
+                <article class="facilities">
+                                <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/fas_7.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                         <div class="bottom-left">Industry Grade Borosope Equipment
+                            </div>     
+                            </article>
+                            <article class="facilities">
+                                <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/fas_8.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                         <div class="bottom-left">MRO Access for Practical Training</div>     
+                            </article>
+                            <article class="facilities">
+                                    <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2020/01/fas_9.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                             <div class="bottom-left">Multi-Fuction Training Device</div>     
+                                </article>
+                <article class="achievement" style="width:100%;">
+                <p style="text-align:justify">
+                        Successfully completed maiden type training (B1) on Airbus A320 (CFM LEAP 1A) engine (28 JAN 2019 TO 12 APRIL 2019).
+                        Successfully completed difference training (B1) from Airbus A320 (V2500) to Airbus A320 (CFM LEAP 1A) engine
+                        Combined type training course (B1+B2) on Airbus A320 (CFM LEAP 1A) engine (06 May 2019)
+                        Trained approx. 200 participants after obtaining DGCA approval on various training including human factors, fuel tank safety, regulations, EDTO, marshalling, ramp safety and other regulatory and non-regulatory courses.
+                </p>
+              </article>
+                
+                <article class="gallery">
+                    <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2019/07/IMG-20190725-WA0007-1.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                </article>
+                <article class="gallery">
+                        <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2019/07/IMG-20190725-WA0006-1.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                    </article>
+                    <article class="gallery">
+                            <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2019/07/IMG-20190725-WA0005-1.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                        </article>
+                        <article class="gallery">
+                                <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2019/07/IMG-20190720-WA0002-1.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                            </article> 
+                            <article class="gallery">
+                                    <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2019/07/20190719_145911.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                                </article>
+                                <article class="gallery">
+                                        <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2019/07/20190719_145310-1.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                                    </article> 
+                                    <article class="gallery">
+                                            <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2019/07/20190719_150804-1.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                                        </article>
+                                        <article class="gallery">
+                                                <img src="https://wissenmarketresearch.com/elearningwebsite/wp-content/uploads/2019/07/20190719_145330-1.jpg" class="img-responsive" style="    height: 178px; width:250px;" />
+                                            </article>        
+            </section>
+        
+        <script>
+        $( function() {
+          var $grid = $('.grid').isotope({
+            itemSelector: 'article'
+          });
+        
+          // filter buttons
+          $('.filters-button-group').on( 'click', 'button', function() {
+            var filterValue = $( this ).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+          });
+          $('.button-group').each( function( i, buttonGroup ) {
+            var $buttonGroup = $( buttonGroup );
+            $buttonGroup.on( 'click', 'button', function() {
+              $buttonGroup.find('.is-checked').removeClass('is-checked');
+              $( this ).addClass('is-checked');
+            });
+          });
+        });
+        
+        // debounce so filtering doesn't happen every millisecond
+        function debounce( fn, threshold ) {
+          var timeout;
+          return function debounced() {
+            if ( timeout ) {
+              clearTimeout( timeout );
+            }
+            function delayed() {
+              fn();
+              timeout = null;
+            }
+            timeout = setTimeout( delayed, threshold || 100 );
+          }
+        }
+        
+        $(window).bind("load", function() {
+          $('#training').click();
+        });
+        </script>

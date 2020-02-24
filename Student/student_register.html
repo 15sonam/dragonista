@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dragonista - Student registration</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/media/image/favicon.ico"/>
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
+
+    <!-- App styles -->
+     <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/custom.css" type="text/css">
+</head>
+<body class="form-membership base_user_student">
+
+
+
+<div class="container"> 
+<div class="row">
+<div class=" col-sm-8 offset-sm-2"> 
+        <div class="form-wrapper  my-0">
+
+                <!-- logo -->
+                <div id="logo">
+                    <img class="logo p-4 w-50" src="assets/media/image/logo.jpg" alt="image">
+                  
+                </div>
+                <!-- ./ logo -->
+            <br>
+                <h5 >Sign Up</h5>
+            
+                <!-- form -->
+                <form class="needs-validation" novalidate="">
+                    <div class="row">
+                    <div class="col-sm-6">
+                            <div class="form-group">
+                               <input type="text" class="form-control" placeholder="Full Name" required autofocus>
+                               <div class="invalid-feedback">
+                                    Please provide a valid name.
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-6">
+                                    <div class="form-group">
+                                     <input type="email" class="form-control" placeholder="Email" title="example@example.com" required>
+                                     <div class="invalid-feedback">
+                                        Please provide a valid email.
+                                    </div>    
+                                </div>
+                                 </div>
+                   
+                    </div>
+                    <div class="row">
+                            
+                            <div class="col-sm-6">
+                                    <div class="form-group">
+                                      <input type="password" class="form-control" placeholder="Password" title="Enter 8 to 15 alphanumeric characters with one letter as capital letter and having at least one numeric value and one special character without space." required>
+                                      <div class="invalid-feedback">
+                                        Please provide a valid password.
+                                    </div> 
+                                    </div>   
+                            </div>
+            
+                            <div class="col-sm-6">
+                                            <div class="form-group">
+                                              <input type="password" class="form-control" placeholder="Confirm Password" title="Enter 8 to 15 alphanumeric characters with one letter as capital letter and having at least one numeric value and one special character without space." required>
+                                              <div class="invalid-feedback">
+                                                    Please provide a valid password.
+                                                </div>
+                                            </div>   
+                                    </div>
+                    </div>
+            
+                    <div class="row">
+                            <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <input type="text" class="form-control" placeholder="Town/City" required>
+                                       <div class="invalid-feedback">
+                                        Please provide a valid Town/City.
+                                    </div>      
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                    <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Region" required>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid Region.
+                                            </div>
+                                        </div>
+                            </div>
+                    </div>
+            
+                    <div class="row">
+                            <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <input type="text" class="form-control" placeholder="Address 1" required>
+                                       <div class="invalid-feedback">
+                                        Please provide a valid Address.
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                    <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Address 2" required>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid Address.
+                                            </div>  
+                                        </div>
+                            </div>
+                    </div>
+            
+                    <div class="row">
+                            <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <input type="text" class="form-control" placeholder="School Name" required>
+                                       <div class="invalid-feedback">
+                                        Please provide a valid school name.
+                                    </div>       
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                    <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Post Code/Zip Code" required>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid Post Code/Zip Code.
+                                            </div>  
+                                        </div>
+                            </div>
+                    </div>
+            
+                   <div class="row"> 
+                            <div class="col-sm-6">
+                                            <div class="form-group">
+                                                    <select class="form-control" required>
+                                                        <option value="0" selected disabled>Select Country</option>
+                                                        <option value="1">India</option>
+                                                        <option value="2">America</option>
+                                                    </select>
+                                                    <div class="invalid-feedback">
+                                                        Please Select an option.
+                                                    </div>   
+                                                   </div>
+                                    </div>
+                   </div>  
+            
+                   
+            
+                   <hr>
+                   <h5 class="text-left text-red">Contact Number</h5>   
+                   <div class="row">
+                        <div class="col-sm-5">
+                                <div class="form-group">
+                                  <select class="form-control" required>
+                                      <option value="0" selected disabled>Select Country code</option>
+                                      <option value="1">India</option>
+                                      <option value="2">America</option>
+                                      <div class="invalid-feedback">
+                                        Please Select an option.
+                                    </div>
+                                  </select>
+                                 </div>
+                        </div>
+            
+                        <div class="col-sm-7">
+                                <div class="form-group">
+                                        <div class="form-group">
+                                         <input type="number" class="form-control" placeholder="Permanent Mobile No." min="0" max="9999999999" required>
+                                         <div class="invalid-feedback">
+                                                Please provide a valid Mobile Number.
+                                            </div> 
+                                        </div>
+                                 </div>
+                        </div>
+                  </div>
+            
+                  <div class="row">
+                        <div class="col-sm-5">
+                                <div class="form-group">
+                                  <select class="form-control" required>
+                                      <option value="0" selected disabled>Select Country code</option>
+                                      <option value="1">India</option>
+                                      <option value="2">America</option>
+                                  </select>
+                                  <div class="invalid-feedback">
+                                        Please Select an option.
+                                    </div>
+                                 </div>
+                        </div>
+            
+                        <div class="col-sm-7">
+                                <div class="form-group">
+                                        <div class="form-group">
+                                         <input type="number" class="form-control" placeholder="Alternative Mobile No." min="0" max="9999999999" required>
+                                         <div class="invalid-feedback">
+                                                Please provide a valid Mobile Number.
+                                            </div> 
+                                        </div>
+                                 </div>
+                        </div>
+                  </div>
+            
+                <hr>
+               
+            
+                    <button class="btn btn-primary btn-block student-btn">Register</button>
+                    <hr>
+                    <p class="text-muted mb-0">Already have an account?</p>
+                    <a href="login.html" class="btn btn-outline-light btn-sm">Sign in!</a>
+                </form>
+                <!-- ./ form -->
+            
+            </div>
+</div>
+</div>
+</div>
+
+<!-- Plugin scripts -->
+<script src="vendors/bundle.js"></script>
+
+<!-- App scripts -->
+<script src="assets/js/app.min.js"></script>
+</body>
+</html>
